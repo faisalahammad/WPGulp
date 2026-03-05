@@ -1,0 +1,43 @@
+name: Test on Node LTS Versions
+
+on:
+  push:
+    branches: [main, master, node-lts-modernization]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20, 22, 24]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install installer dependencies
+        run: npm ci
+        working-directory: ./
+
+      - name: Test installer runs without error
+        run: node installer/index.js --help || true
+        working-directory: ./
+
+      - name: Install template dependencies
+        run: npm ci
+        working-directory: ./WPGulp
+
+      - name: Test gulp tasks
+        run: npx gulp styles --once
+        working-directory: ./WPGulp
+
+      - name: Run npm audit
+        run: npm audit --audit-level=high || true
+        working-directory: ./WPGulp

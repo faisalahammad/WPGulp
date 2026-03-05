@@ -15,14 +15,14 @@
  *      8. InjectCSS instead of browser page reload.
  *      9. Generates .pot file for i18n and l10n.
  *
- * @tutorial https://github.com/ahmadawais/WPGulp
+ * @tutorial https://github.com/faisalahammad/WPGulp
  * @author Ahmad Awais <https://twitter.com/MrAhmadAwais/>
  */
 
 /**
  * Load WPGulp Configuration.
  *
- * TODO: Customize your project in the wpgulp.js file.
+ * TODO: Customize your project in the wpgulp.config.js file.
  */
 const config = require('./wpgulp.config.js');
 
@@ -34,7 +34,7 @@ const config = require('./wpgulp.config.js');
 const gulp = require('gulp'); // Gulp of-course.
 
 // CSS related plugins.
-const sass = require('gulp-sass'); // Gulp plugin for Sass compilation.
+const sass = require('gulp-sass')(require('sass')); // Gulp plugin for Sass compilation (Dart Sass).
 const minifycss = require('gulp-uglifycss'); // Minifies CSS files.
 const autoprefixer = require('gulp-autoprefixer'); // Autoprefixing magic.
 const mmq = require('gulp-merge-media-queries'); // Combine matching media queries into one.
@@ -52,7 +52,7 @@ const imagemin = require('gulp-imagemin'); // Minify PNG, JPEG, GIF and SVG imag
 const rename = require('gulp-rename'); // Renames files E.g. style.css -> style.min.css.
 const lineec = require('gulp-line-ending-corrector'); // Consistent Line Endings for non UNIX systems. Gulp Plugin for Line Ending Corrector (A utility that makes sure your files have consistent line endings).
 const filter = require('gulp-filter'); // Enables you to work on a subset of the original files by filtering them using a glob.
-const sourcemaps = require('gulp-sourcemaps'); // Maps code in a compressed file (E.g. style.css) back to it’s original position in a source file (E.g. structure.scss, which was later combined with other css files to generate style.css).
+const sourcemaps = require('gulp-sourcemaps'); // Maps code in a compressed file (E.g. style.css) back to it's original position in a source file (E.g. structure.scss, which was later combined with other css files to generate style.css).
 const notify = require('gulp-notify'); // Sends message notification to you.
 const browserSync = require('browser-sync').create(); // Reloads browser and injects CSS. Time-saving synchronized browser testing.
 const wpPot = require('gulp-wp-pot'); // For generating the .pot file.

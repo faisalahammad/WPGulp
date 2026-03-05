@@ -1,32 +1,42 @@
 {
-	"name": "wpgulp",
-	"version": "3.2.0",
-	"author": "Ahmad Awais (https://twitter.com/MrAhmadAwais/)",
+	"name": "wpgulppro",
+	"version": "4.0.0",
+	"author": "Faisal Ahammad (https://twitter.com/faisalahammad/)",
 	"license": "MIT",
-	"repository": "ahmadawais/WPGulp",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/faisalahammad/WPGulp.git"
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	},
 	"bin": {
-		"wpgulp": "./installer/index.js"
+		"wpgulppro": "./installer/index.js"
 	},
 	"keywords": [
 		"wpgulp",
+		"wpgulppro",
 		"WP Gulp",
 		"WordPress Gulp",
 		"Install WPGulp",
 		"Gulp with WordPress",
-		"Gulp.js WordPress"
+		"Gulp.js WordPress",
+		"Node 20",
+		"Node 22",
+		"Node 24"
 	],
 	"dependencies": {
-		"chalk": "^2.4.1",
-		"clear-any-console": "^1.16.2",
+		"chalk": "^4.1.2",
+		"clear-any-console": "^1.16.3",
 		"cli-check-node": "^1.3.4",
 		"cli-handle-unhandled": "^1.1.1",
-		"download": "^7.1.0",
-		"execa": "^1.0.0",
-		"log-symbols": "^4.0.0",
-		"ora": "^3.0.0"
+		"download": "^8.0.0",
+		"execa": "^5.1.1",
+		"log-symbols": "^4.1.0",
+		"ora": "^5.4.1"
 	},
 	"devDependencies": {
-		"eslint": "^5.5.0",
+		"eslint": "^8.57.0",
 		"eslint-config-wordpress": "^2.0.0"
 	}
 }

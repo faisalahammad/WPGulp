@@ -1,0 +1,27 @@
+# Test files
+.github/
+.claude/
+.vscode/
+
+# Documentation
+*.md
+!readme.md
+
+# Config files
+.editorconfig
+.prettierrc
+.markdownlint.json
+
+# Development files
+.nvmrc
+WPGulp/.nvmrc
+
+# Template files that shouldn't be in installer package
+WPGulp/node_modules/
+WPGulp/package-lock.json
+
+# Lock file
+package-lock.json
+
+# Audit report
+AUDIT.md
