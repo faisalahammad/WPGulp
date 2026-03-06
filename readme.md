@@ -4,9 +4,9 @@
 
   <h1><code>WordPress Gulp Workflow</code></h1>
 
-[![GitHub](https://img.shields.io/wordpress/v/akismet.svg?colorA=D14543&colorB=21759B&maxAge=2592000&style=flat&label=WordPress)](https://github.com/faisalahammad/WPGulp/)
+[![GitHub](https://img.shields.io/wordpress/v/akismet.svg?colorA=D14543&colorB=21759B&maxAge=2592000&style=flat&label=WordPress)](https://github.com/faisalahammad/WPGulpPro/)
 [![emoji-log](https://img.shields.io/badge/🚀%20Emoji-Log-gray.svg?colorA=D14543&colorB=21759B&style=flat)](https://github.com/ahmadawais/Emoji-Log/)
-[![GitHub stars](https://img.shields.io/github/stars/faisalahammad/WPGulp.svg?style=social&label=Stars)](https://github.com/faisalahammad/WPGulp/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/faisalahammad/WPGulpPro.svg?style=social&label=Stars)](https://github.com/faisalahammad/WPGulpPro/stargazers)
 [![GitHub followers](https://img.shields.io/github/followers/faisalahammad.svg?style=social&label=Follow)](https://github.com/faisalahammad?tab=followers)
 [![Tweet](https://img.shields.io/twitter/follow/faisalahammadwp.svg?style=social&label=Tweet%20@faisalahammadwp)](https://twitter.com/faisalahammadwp/)
 [![VSCode.pro](https://img.shields.io/badge/Supported%20by-VSCode%20Power%20User%20Course%20%E2%86%92-gray.svg?colorA=D14543&colorB=21759B)](https://VSCode.pro)
@@ -27,7 +27,7 @@
             A FOSS (Free & Open Source Software) project. Maintained by <a href='https://github.com/faisalahammad'>@faisalahammad</a>.
         </td>
         <td align='center'>
-            <a href='https://github.com/faisalahammad/WPGulp'>
+            <a href='https://github.com/faisalahammad/WPGulpPro'>
                 <img src='https://img.shields.io/badge/→-WPGulpPro-gray.svg?colorA=D14543&colorB=21759B&style=flat' width='120' />
             </a>
         </td>
@@ -192,7 +192,7 @@ The `wpgulppro` package is not yet published to npm. Use one of these methods in
 cd /path/to/your-theme
 
 # Install directly from GitHub
-npm install faisalahammad/WPGulp
+npm install faisalahammad/WPGulpPro
 
 # Run the installer
 npx wpgulppro
@@ -202,8 +202,8 @@ npx wpgulppro
 
 ```sh
 # Clone the repository
-git clone https://github.com/faisalahammad/WPGulp.git
-cd WPGulp
+git clone https://github.com/faisalahammad/WPGulpPro.git
+cd WPGulpPro
 
 # Link globally
 npm link
@@ -217,7 +217,7 @@ wpgulppro
 
 ### Method 3: ZIP Download
 
-1. Download [WPGulp ZIP](https://github.com/faisalahammad/WPGulp/archive/refs/heads/master.zip)
+1. Download [WPGulpPro ZIP](https://github.com/faisalahammad/WPGulpPro/archive/refs/heads/master.zip)
 2. Extract the files to your theme/plugin folder
 3. Run `npm install`
 
@@ -317,4 +317,4 @@ This project is a modernized fork of [ahmadawais/WPGulp](https://github.com/ahma
 
 [![Sponsor](https://raw.githubusercontent.com/ahmadawais/stuff/master/sponsor/sponsor.jpg)](https://github.com/AhmadAwais/sponsor)
 
-[n]: https://nodecli.com/?utm_source=github.com&utm_medium=referral&utm_campaign=faisalahammad/WPGulp
+[n]: https://nodecli.com/?utm_source=github.com&utm_medium=referral&utm_campaign=faisalahammad/WPGulpPro
