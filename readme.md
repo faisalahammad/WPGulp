@@ -129,7 +129,7 @@ npm -v
 ### → `STEP #1` — Download the Required Files
 
 1. In the terminal go to the root folder of your WordPress plugin/theme
-2. Run the following command to download all the files in the [WPGulp/src](/WPGulp) folder
+2. Run the following command to download all the files in the `WPGulp/` folder from the [WPGulpPro repository](https://github.com/faisalahammad/WPGulpPro)
 
 _It'll take a couple of minutes to install._
 
@@ -178,48 +178,6 @@ npm run styles-rtl
 # To generate theme/plugin zip file without extranious files.
 npm run zip
 ```
-
-<br>
-
-## 🔧 Alternative Installation (Before npm Release)
-
-The `wpgulppro` package is not yet published to npm. Use one of these methods instead:
-
-### Method 1: GitHub Install (Recommended)
-
-```sh
-# Navigate to your WordPress theme/plugin folder
-cd /path/to/your-theme
-
-# Install directly from GitHub
-npm install faisalahammad/WPGulpPro
-
-# Run the installer
-npx wpgulppro
-```
-
-### Method 2: npm link (Development)
-
-```sh
-# Clone the repository
-git clone https://github.com/faisalahammad/WPGulpPro.git
-cd WPGulpPro
-
-# Link globally
-npm link
-
-# Navigate to your theme/plugin folder
-cd /path/to/your-theme
-
-# Run the installer
-wpgulppro
-```
-
-### Method 3: ZIP Download
-
-1. Download [WPGulpPro ZIP](https://github.com/faisalahammad/WPGulpPro/archive/refs/heads/master.zip)
-2. Extract the files to your theme/plugin folder
-3. Run `npm install`
 
 <br>
 
